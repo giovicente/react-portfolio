@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom tokens */
+:root {
+  --max-width: 1100px;
+}
+
+/* Light glass / card surface for subtle depth */
+.card-glass {
+  background: color-mix(in srgb, white 90%, transparent);
+  border-radius: 12px;
+  border: 1px solid rgba(16,24,36,0.06); /* soft border */
+  box-shadow: 0 6px 18px rgba(12,20,30,0.04);
+}
+
+/* headings */
+h1,h2,h3 {
+  letter-spacing: -0.02em;
+}
+
+/* utility to limit content width */
+.container {
+  max-width: var(--max-width);
+}
+
+/* fine tuned link color fallback */
+a {
+  color: #2b6a91;
+}
