@@ -13,28 +13,28 @@ export default function EngineeringPortfolio() {
       <div className="grid gap-6 lg:grid-cols-2">
         <FeatureCard 
           title="AWS Cloude Practitioner"
-          logo="/public/assets/logos/aws-practitioner.png"
+          logo="/logos/aws-practitioner.png"
         >
           Foundational certification covering core AWS services, cloud concepts, security, pricing, and architecture principles.
         </FeatureCard>
 
         <FeatureCard 
           title="Claude Code in Action"
-          logo="/public/assets/logos/claude-code.png"
+          logo="/logos/claude-code.png"
         >
           Hands-on learning focused on applying AI-assisted development in real technical workflows and problem-solving scenarios.
         </FeatureCard>
 
         <FeatureCard 
           title="Specialization in Software Technologies @ Escola Politécnica da USP"
-          logo="/public/assets/logos/politecnica.png"
+          logo="/logos/politecnica.png"
         >
           Focused on deepening my perspective on software technologies, engineering practices, and the strategic role of technology in business.
         </FeatureCard>
 
         <FeatureCard 
           title="Technical Mentor"
-          logo="/public/assets/logos/mercado-libre.png"
+          logo="/logos/mercado-libre.png"
         >
           Currently mentoring two professionals in software architecture, with a focus on building strong foundations in system design and technical decision-making.
           Topics include event-driven solutions, microservices, database design, and Domain-Driven Design (DDD).

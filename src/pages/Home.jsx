@@ -42,7 +42,7 @@ export default function Home() {
           <div className="grid gap-4">
             <FeatureCard
               title="Instant Payments / Pix"
-              logo="/public/assets/logos/itau.png"
+              logo="/logos/itau.png"
             >
               Helped deliver key capabilities for Brazil’s instant payments ecosystem, with a focus on payment proof and auditability.
               <span slot="footer" />
@@ -50,21 +50,21 @@ export default function Home() {
 
             <FeatureCard
               title="Cash Management Platform"
-              logo="/public/assets/logos/itau.png"
+              logo="/logos/itau.png"
             >
               Contributed to a highly recognized Cash Management platform awarded across Brazil, Latin America, and globally.
             </FeatureCard>
 
             <FeatureCard 
               title="Mercado Libre" 
-              logo="/public/assets/logos/mercado-libre.png"
+              logo="/logos/mercado-libre.png"
             >
               Leading software projects in global e-commerce, focused on systems that improve the seller experience.
             </FeatureCard>
 
             <FeatureCard 
               title="Teaching @ Ada" 
-              logo="/public/assets/logos/ada.png"
+              logo="/logos/ada.png"
             >
               Experienced in teaching programming and making complex technical concepts practical, clear, and accessible.
             </FeatureCard>
