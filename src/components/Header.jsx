@@ -3,12 +3,14 @@ import { Link, NavLink } from 'react-router-dom'
 import { Code, Layers } from 'lucide-react'
 
 export default function Header() {
+  const homeImage = `${import.meta.env.BASE_URL}assets/home.png`
+    
   return (
     <header className="w-full sticky top-0 z-30 bg-white/60 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-md bg-surface flex items-center justify-center shadow-card border border-border">
-            <img src="/assets/home.png" alt="Home" className="w-6 h-6 object-contain" />
+            <img src={homeImage} alt="Home" className="w-6 h-6 object-contain" />
           </div>
           <div className="text-sm">
             <div className="font-semibold text-text">Giovanni Gentile</div>

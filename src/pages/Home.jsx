@@ -4,6 +4,10 @@ import SectionTitle from '../components/SectionTitle'
 import FeatureCard from '../components/FeatureCard'
 
 export default function Home() {
+  const itauLogo = `${import.meta.env.BASE_URL}logos/itau.png`
+  const meliLogo = `${import.meta.env.BASE_URL}logos/mercado-libre.png`
+  const adaLogo = `${import.meta.env.BASE_URL}logos/ada.png`
+
   return (
     <div>
       <Hero />
@@ -42,7 +46,7 @@ export default function Home() {
           <div className="grid gap-4">
             <FeatureCard
               title="Instant Payments / Pix"
-              logo="/logos/itau.png"
+              logo={itauLogo}
             >
               Helped deliver key capabilities for Brazil’s instant payments ecosystem, with a focus on payment proof and auditability.
               <span slot="footer" />
@@ -50,21 +54,21 @@ export default function Home() {
 
             <FeatureCard
               title="Cash Management Platform"
-              logo="/logos/itau.png"
+              logo={itauLogo}
             >
               Contributed to a highly recognized Cash Management platform awarded across Brazil, Latin America, and globally.
             </FeatureCard>
 
             <FeatureCard 
               title="Mercado Libre" 
-              logo="/logos/mercado-libre.png"
+              logo={meliLogo}
             >
               Leading software projects in global e-commerce, focused on systems that improve the seller experience.
             </FeatureCard>
 
             <FeatureCard 
               title="Teaching @ Ada" 
-              logo="/logos/ada.png"
+              logo={adaLogo}
             >
               Experienced in teaching programming and making complex technical concepts practical, clear, and accessible.
             </FeatureCard>

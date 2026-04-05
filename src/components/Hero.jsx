@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 import { Code, Layers } from 'lucide-react'
 
 export default function Hero() {
+  const profileImage = `${import.meta.env.BASE_URL}assets/profile.jpg`
+
   return (
     <section className="container mx-auto px-6 py-16 lg:py-24">
       <div className="grid items-center gap-12 lg:grid-cols-[320px_1fr]">
         <div className="flex justify-center lg:justify-start">
           <div className="w-56 lg:w-72 rounded-3xl overflow-hidden card-glass border border-border shadow-card bg-black/5">
             <img
-              src="/assets/profile.jpg"
-              alt="Foto de perfil — Seu Nome"
+              src={profileImage}
+              alt="Profile Photo"
               className="block w-full h-auto"
               onError={(e) => {
                 e.currentTarget.onerror = null
