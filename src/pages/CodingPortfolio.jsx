@@ -20,6 +20,15 @@ export default function CodingPortfolio() {
         </FeatureCard>
 
         <FeatureCard
+          title="Engineering Management Katas FE"
+          repoUrl="https://github.com/giovicente/engineering-management-katas-fe"
+          siteUrl="https://engineering-management-katas-fe.vercel.app/"
+        >
+          Frontend for the Engineering Katas API. Provides a responsive user interface built with React and Vite. Deployed on Vercel (first MVP is live).
+          <div className="mt-3 text-xs text-muted">React · Vite · Vercel · Powered by Codex</div>
+        </FeatureCard>
+
+        <FeatureCard
           title="PERT Estimates"
           repoUrl="https://github.com/giovicente/estimates-using-pert-method"     
         >

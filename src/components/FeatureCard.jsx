@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { ArrowRight, Github } from 'lucide-react'
 
-export default function FeatureCard({ title, children, footer, stack = [], stackLabel, logo, repoUrl }) {
+export default function FeatureCard({ title, children, footer, stack = [], stackLabel, logo, repoUrl, siteUrl }) {
   const hasStack = Array.isArray(stack) && stack.length > 0
 
   // small helper component to try multiple candidate paths for the logo gracefully
@@ -76,18 +76,31 @@ export default function FeatureCard({ title, children, footer, stack = [], stack
         </div>
       )}
 
-      {/* repo link: subtle, only when provided */}
-      {repoUrl ? (
-        <div className="mt-4 flex items-center text-sm">
-          <a
-            href={repoUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 text-muted hover:text-text hover:underline"
-          >
-            <Github className="w-4 h-4 text-muted" />
-            <span>View on GitHub</span>
-          </a>
+      {/* repo link and site link: subtle, only when provided */}
+      {repoUrl || siteUrl ? (
+        <div className="mt-4 flex items-center gap-4 text-sm">
+          {repoUrl && (
+            <a
+              href={repoUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-muted hover:text-text hover:underline"
+            >
+              <Github className="w-4 h-4 text-muted" />
+              <span>View on GitHub</span>
+            </a>
+          )}
+          {siteUrl && (
+            <a
+              href={siteUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 text-muted hover:text-text hover:underline"
+            >
+              <ArrowRight className="w-4 h-4 text-muted" />
+              <span>View site</span>
+            </a>
+          )}
         </div>
       ) : null}
 
