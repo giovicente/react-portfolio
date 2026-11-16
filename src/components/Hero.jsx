@@ -33,7 +33,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base lg:text-lg leading-8 text-muted mb-8 text-justify">
-            Software engineer with experience in the industry since 2013, delivering production systems, architecture, technical execution, teaching programming, and engineering leadership. I work at the intersection of technical depth, organizational clarity, and building stronger teams. Outside of work, I’m an avid reader and retro gaming enthusiast.
+            Twice-exceptional (ASD / GT). Software engineer with experience in the industry since 2013, delivering production systems, architecture, technical execution, teaching programming, and engineering leadership. I work at the intersection of technical depth, organizational clarity, and building stronger teams. Outside of work, I’m an avid reader and retro gaming enthusiast.
           </p>
 
           <div className="flex flex-wrap gap-3">

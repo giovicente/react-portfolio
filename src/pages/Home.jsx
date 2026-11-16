@@ -45,11 +45,17 @@ export default function Home() {
 
           <div className="grid gap-4">
             <FeatureCard
-              title="Instant Payments / Pix"
-              logo={itauLogo}
+              title={
+                <span className="inline-flex flex-wrap items-center gap-2">
+                  Mercado Libre
+                  <span className="rounded-full border border-green-200 bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800">
+                    Present
+                  </span>
+                </span>
+              }
+              logo={meliLogo}
             >
-              Helped deliver key capabilities for Brazil’s instant payments ecosystem, with a focus on payment proof and auditability.
-              <span slot="footer" />
+              Leading software projects in global e-commerce. Managing all notifications sent to sellers across the platform, with a focus on clear, effective communication that supports their day-to-day operations.
             </FeatureCard>
 
             <FeatureCard
@@ -60,17 +66,18 @@ export default function Home() {
             </FeatureCard>
 
             <FeatureCard 
-              title="Mercado Libre" 
-              logo={meliLogo}
+              title="Instant Payments / Pix"
+              logo={itauLogo}
             >
-              Leading software projects in global e-commerce, focused on systems that improve the seller experience.
+              Helped deliver key capabilities for Brazil’s instant payments ecosystem, with a focus on payment proof and auditability.
+              <span slot="footer" />
             </FeatureCard>
 
             <FeatureCard 
               title="Teaching @ Ada" 
               logo={adaLogo}
             >
-              Experienced in teaching programming and making complex technical concepts practical, clear, and accessible.
+              Taught Java with a focus on SOLID principles and Object Calisthenics, while introducing Domain-Driven Design (DDD) and API concepts, making complex technical topics practical, clear, and accessible.
             </FeatureCard>
           </div>
         </aside>
